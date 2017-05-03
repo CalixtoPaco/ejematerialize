@@ -1,0 +1,51 @@
+<head>
+  <title>ejematerialize</title>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper teal darken-2">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href=""><i class="material-icons">home</i>Inicio</a></li>
+        <li><a href="">Components</a></li>
+        <li><a href="">Javascript</a></li>
+        <li><a href="">Mobile</a></li>
+      </ul>
+      <ul class="" id="mobile-demo">
+        <li><a href="">Sass</a></li>
+        <li><a href="">Components</a></li>
+        <li><a href="">Javascript</a></li>
+        <li><a href="">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  {{> hello}}
+  {{> info}}
+
+
+</body>
+
+<template name="hello">
+  <button class="waves-effect waves-light btn">Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+<template name="info">
+  <h2>Learn Meteor!</h2>
+  <ul>
+    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
+    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
+    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
+    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
+
+  </ul>
+</template>
+
